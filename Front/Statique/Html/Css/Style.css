@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+
+
+body{
+    background-color:#1695DA ;
+    
+    
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.title-box{
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+    top: 180px;
+    box-shadow: -20px 20px 2px 1px rgba(0, 0, 0, .2);
+}
+
+header h1{
+    font-size: 80px;
+    text-align: center;
+
+}
+
+header p {
+    font-size: 25px;
+    text-align: center;
+}
+
+header, h1 ,header p , li { 
+    font-family: 'Martel', serif;
+
+}
+/*slide*/
+
+
+div.slider{
+    overflow: hidden;
+}
+div.slides{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: calc(500px*4);
+    height: 720px;
+    animation: glisse 15s infinite ease;
+   
+}
+.slide{
+    opacity: 0.5;
+}
+
+@keyframes glisse {
+
+    0% {transform: translateX(0);
+    }
+    10% {transform: translateX(0x);
+    }
+    33% {transform: translateX(-500px);
+    }
+    66% {transform: translateX(-500x);
+    }
+    100% {transform: translateX(0);
+}
+}
+
+.section-menu{
+    justify-content: center;
+    transform: translateY(-130px);
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu{
+    width: calc(500px*6);
+    
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu ul li:hover{
+    transform: scale(0.95);
+    transition: 0.3s all;
+}
+
+nav.menu ul li  {
+    list-style-type: none;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;    
+
+}
+
+.nav-item{
+    flex: 1;
+    height: 300px;
+}
+
+.Pizza{
+    background: url(../image/pizza.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Burger{
+    background: url(../image/burger1.jpeg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Croque{
+    background: url(../image/croquee.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Dessert{
+    background: url(../image/cake.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Soupe{
+    background: url(../image/soupee.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.Viande{
+    background: url(../image/viandee.jpg)100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+}
+
+.item:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+.item:hover{
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.item-info{
+    padding: 20px;
+    line-height: 40px;
+}
+
+.item-info h3{
+    font-size: 30px;
+}
+
+.item-info hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.4;
+}
+
+section{
+    padding: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+section img{
+   width: 300px;
+   height: auto;
+   
+}
+
+p.prix {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+
+.sticky{
+    position: fixed;
+    width: 300px;
+    right: 50px;
+    top: 500;
+    
+}
+nav.menu ul {
+    flex-direction: column;
+    
+    }
