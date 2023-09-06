@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Redressed&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.redressed {
+  font-family: "Redressed", cursive;
+}
+
+.merriweather {
+  font-family: "merriweather", serif;
+}
+
+.cc-navbar {
+  background-color: rgb(0, 0, 0, 0.55);
+  font-family: "Merriweather", serif;
+  box-shadow: 1px 1px 3px rgb(255, 255, 255, 0.54);
+}
+
+.btn-order {
+  color: chartreuse;
+  border-color: chartreuse;
+  transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:active {
+  color: black;
+  background-color: chartreuse;
+}
+
+.d-flex {
+  height: 25%;
+  width: 25%;
+}
+
+.btn-outline-success {
+  color: chartreuse;
+  border-color: chartreuse;
+  transition: 0.5s;
+}
+
+.btn-outline-success:hover,
+.btn-outline-success:active {
+  color: black;
+  background-color: chartreuse;
+}
+
+body {
+  background-image: url(/Front/Statique/Html/image/categorie\ burger.jpg);
+  background-size: cover;
+}
+
+.navbar-brand {
+  margin-bottom: 32px;
+}
+
+.cc-container {
+  background-color: red;
+}
+
+.row-card {
+  margin-left: 11%;
+  height: 150px;
+  width: 700px;
+}
